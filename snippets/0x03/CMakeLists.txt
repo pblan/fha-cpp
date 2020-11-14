@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.15)
+project(clion)
+
+set(CMAKE_CXX_STANDARD 20)
+
+add_executable(a_ctor_dtor_throw a_ctor_dtor_throw)
+add_executable(a_ctor_dtor a_ctor_dtor)
+add_executable(b_getter_setter b_getter_setter)
+add_executable(c_const_getter c_const_getter)
+add_executable(d_copyctor d_copyctor)
+add_executable(e_class_address e_class_address)
+add_executable(f_class_address_best f_class_address_best)
+
+add_executable(sol_luckyrock sol_luckyrock)
+add_executable(sol_meadowriver sol_meadowriver)
+add_executable(sol_ravencastle sol_ravencastle)
+add_executable(sol_stoneridge sol_stoneridge)
+
+add_executable(work_class_car work_class_car)
