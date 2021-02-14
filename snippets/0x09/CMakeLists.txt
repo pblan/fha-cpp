@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.15)
+project(clion)
+
+set(CMAKE_CXX_STANDARD 20)
+add_executable(a_specialize_01_pair a_specialize_01_pair)
+add_executable(a_specialize_02_type a_specialize_02_type)
+add_executable(a_specialize_03_vector a_specialize_03_vector)
+add_executable(a_specialize_04_ispointer a_specialize_04_ispointer)
+add_executable(a_specialize_05_metaprogramming a_specialize_05_metaprogramming)
+add_executable(b_smartptr_01_sharedptr b_smartptr_01_sharedptr)
+add_executable(b_smartptr_02_weakptr b_smartptr_02_weakptr)
+
+add_executable(sol_eastbourne sol_eastbourne)
+add_executable(sol_openshaw sol_openshaw)
+add_executable(sol_wintervale sol_wintervale)
+
+add_executable(work_g_inverse work_g_inverse)

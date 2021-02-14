@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.15)
+project(clion)
+
+set(CMAKE_CXX_STANDARD 20)
+add_executable(a_lang_01_statics a_lang_01_statics)
+add_executable(a_lang_02_friend a_lang_02_friend)
+add_executable(b_op_01_address b_op_01_address)
+add_executable(b_op_02_assign b_op_02_assign)
+add_executable(b_op_03_plus_global b_op_03_plus_global)
+add_executable(b_op_04_plus_member b_op_04_plus_member)
+add_executable(b_op_05_brackets b_op_05_brackets)
+add_executable(b_op_06_inc b_op_06_inc)
+add_executable(b_op_07_io b_op_07_io)
+
+add_executable(sol_deerwoods sol_deerwoods)
+add_executable(sol_dovertown sol_dovertown)
+add_executable(sol_heartland sol_heartland)
+
+
