@@ -8,7 +8,7 @@
 	"dockerFile": "../Dockerfile",
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
-		"workbench.colorTheme": "FH Aachen Dark Theme",
+		//"workbench.colorTheme": "FH Aachen Dark Theme",
 		"terminal.integrated.defaultProfile.linux": "bash",
 		"terminal.integrated.profiles.linux": {
 			"bash": {
@@ -25,11 +25,11 @@
 	},
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"pblan.fh-aachen-dark-theme",
+		//"pblan.fh-aachen-dark-theme",
 		"ms-vscode.cmake-tools",
 		"llvm-vs-code-extensions.vscode-clangd",
 		"vadimcn.vscode-lldb",
-		"notskm.clang-tidy",
+		//"notskm.clang-tidy",
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
