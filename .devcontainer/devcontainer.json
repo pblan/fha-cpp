@@ -1,0 +1,48 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.187.0/containers/docker-existing-dockerfile
+{
+	"name": "FH Aachen - C++",
+	// Sets the run context to one level up instead of the .devcontainer folder.
+	"context": "..",
+	// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+	"dockerFile": "../Dockerfile",
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"workbench.colorTheme": "FH Aachen Dark Theme",
+		"terminal.integrated.defaultProfile.linux": "bash",
+		"terminal.integrated.profiles.linux": {
+			"bash": {
+				"path": "bash"
+			}
+		},
+		"cmake.environment": {
+			// We configure clang-10 as our default compiler.
+			"CC": "/usr/bin/clang-10",
+			"CXX": "/usr/bin/clang++-10"
+		},
+		// Tell the CMake extensions where to find CMake.
+		"cmake.cmakePath": "/usr/local/bin/cmake"
+	},
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"pblan.fh-aachen-dark-theme",
+		"ms-vscode.cmake-tools",
+		"llvm-vs-code-extensions.vscode-clangd",
+		"vadimcn.vscode-lldb",
+		"notskm.clang-tidy",
+	],
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Uncomment the next line to run commands after the container is created - for example installing curl.
+	// "postCreateCommand": "apt-get update && apt-get install -y curl",
+	// Uncomment when using a ptrace-based debugger like C++, Go, and Rust
+	"runArgs": [
+		"--cap-add=SYS_PTRACE",
+		"--security-opt",
+		"seccomp=unconfined"
+	],
+	// Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
+	// "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
+	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "vscode"
+}
