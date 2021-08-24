@@ -14,16 +14,19 @@ ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
 # Create a non-root user to use if preferred - see https://aka.ms/vscode-remote/containers/non-root-user.
+RUN apt-get update \
+    && apt-get -y install --no-install-recommends apt-utils 2>&1 \
+    #
+    # Verify git, process tools, lsb-release (common in install instructions for CLIs) installed
+    && apt-get -y install git procps lsb-release \
+    #
     && groupadd --gid $USER_GID $USERNAME \
     && useradd -s /bin/bash --uid $USER_UID --gid $USER_GID -m $USERNAME \
     # [Optional] Uncomment the next three lines to add sudo support
-    # && apt-get install -y sudo \
-    # && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
-    # && chmod 0440 /etc/sudoers.d/$USERNAME \
+    && apt-get install -y sudo \
+    && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
+    && chmod 0440 /etc/sudoers.d/$USERNAME
     #
-
-# Avoid warnings by switching to noninteractive
-ENV DEBIAN_FRONTEND=noninteractive
 
 ARG LLVM_VERSION=10
 
@@ -69,9 +72,6 @@ RUN apt-get update \
 RUN apt-get autoremove -y \
     && apt-get clean -y
 
-# Switch back to dialog for any ad-hoc use of apt-get
-ENV DEBIAN_FRONTEND=dialog
-
 #ENV CC="/usr/bin/clang" \
 #    CXX="/usr/bin/clang++" \
 #    COV="/usr/bin/llvm-cov" \
@@ -84,7 +84,7 @@ COPY . /usr/src/fha-cpp
 WORKDIR /usr/src/fha-cpp
 
 # Use Clang to compile the Test.cpp source file
-RUN clang++ -o Test Test.cpp
+#RUN clang++ -o Test Test.cpp
 
 # Run the output program from the previous step
-CMD ["./Test"]
+#CMD ["./Test"]
