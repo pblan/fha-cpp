@@ -1,6 +1,6 @@
 #include <iostream>
 
-int pot(int b, int n);
+int pot(int base, int pow);
 
 // Berechnung von b^n:
 int main() {
@@ -30,14 +30,14 @@ int main() {
 // Schreiben Sie eine Funktion 'pot', die 'b' und 'n' übergeben bekommt und
 // das Ergebnis zurückgibt. Definieren Sie die Funktion 'pot' erst hinter main
 // und geben Sie vor 'main' nur die Signatur an.
-int pot(int b, int n) {
-  int res{b};
+int pot(int base, int pow) {  // (A)
+  int res{base};
 
   // Formulieren Sie die Schleife einmal als 'for' und einmal als
   // 'while'-Schleife.
-  while (n > 1) {
-    res *= b;
-    --n;
+  while (pow > 1) {
+    res *= base;
+    --pow;
   }
   return res;
 }

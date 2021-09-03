@@ -2,12 +2,12 @@
 
 int main() {
   // Lesen Sie eine ganze Zahl 'n' vom Typ 'int' ...
-  int n;
+  int n; // (A)
   std::cout << "Ëingabe n (int)" << std::endl;
   std::cin >> n;
 
   // und ein Zeichen 'c' vom Typ 'char' ein.
-  char c;
+  char c; // (A)
   std::cout << "Ëingabe c (char)" << std::endl;
   std::cin >> c;
 
@@ -34,3 +34,11 @@ int main() {
 
   return 0;
 }
+
+/* Kommentierung
+ *
+ * (A)  Variablennamen sollten zur Lesbarkeit stets aus mindestens drei Zeichen bestehen. 
+ *
+ *      Siehe dazu auch:
+ * https://clang.llvm.org/extra/clang-tidy/checks/readability-identifier-length.html
+ */
