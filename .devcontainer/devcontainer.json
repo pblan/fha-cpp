@@ -25,11 +25,10 @@
 	},
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		//"pblan.fh-aachen-dark-theme",
 		"ms-vscode.cmake-tools",
 		"llvm-vs-code-extensions.vscode-clangd",
 		"vadimcn.vscode-lldb",
-		//"notskm.clang-tidy",
+		"tomoki1207.pdf"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
