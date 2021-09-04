@@ -37,7 +37,9 @@ int main() {
 
 /* Kommentierung
  *
- * (A)  Variablennamen sollten zur Lesbarkeit stets aus mindestens drei Zeichen bestehen. 
+ * (A)  Variablennamen sollten zur Lesbarkeit stets aus mindestens drei Zeichen
+ *      bestehen. Es gibt natürlich Namen, die generell verstanden werden, wie
+ *      z.B. 'os' (Output Stream), 'st' (Stack), ...
  *
  *      Siehe dazu auch:
  * https://clang.llvm.org/extra/clang-tidy/checks/readability-identifier-length.html

@@ -30,7 +30,7 @@ int main() {
 // Schreiben Sie eine Funktion 'pot', die 'b' und 'n' übergeben bekommt und
 // das Ergebnis zurückgibt. Definieren Sie die Funktion 'pot' erst hinter main
 // und geben Sie vor 'main' nur die Signatur an.
-int pot(int base, int pow) {  // (A)
+int pot(int base, int pow) { // (A)
   int res{base};
 
   // Formulieren Sie die Schleife einmal als 'for' und einmal als

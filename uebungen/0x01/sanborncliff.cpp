@@ -47,8 +47,9 @@ void copy(const double arr_a[], double arr_b[], int dim) {
  *      Siehe dazu auch:
  * https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#slcon1-prefer-using-stl-array-or-vector-instead-of-a-c-array
 
- * (B)  Analog sollte auch auf bound-safe Alternativen zurückgegriffen werden (std::vector<>, std::array<>).
-
+ * (B)  Analog sollte auch auf bound-safe Alternativen zurückgegriffen werden
+ *      (std::vector<>, std::array<>).
+ *
  *     Siehe dazu auch:
  * https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rsl-bounds
  */
