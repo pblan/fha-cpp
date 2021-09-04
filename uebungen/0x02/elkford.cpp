@@ -21,7 +21,7 @@ std::ostream &operator<<(std::ostream &os, const polynom &p)
     return os;
 }
 
-const double eval(polynom &p, const double &x);
+double eval(polynom &p, const double &x);
 
 int main()
 {
@@ -33,7 +33,7 @@ int main()
 
 // Programmieren Sie eine globale Funktion 'eval', um ein Polynom 'p' an einer Stelle 'x' auszuwerten.
 // Übergeben Sie das Polynom  ('call-by-ref') und die Stelle der Funktion.
-const double eval(polynom &p, const double &x)
+double eval(polynom &p, const double &x)
 {
     return p.coeffs[0] + x * (p.coeffs[1] + x * p.coeffs[2]);
 }

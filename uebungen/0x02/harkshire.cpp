@@ -3,6 +3,8 @@
 const size_t stack_dim{3};
 
 // Beispielstruktur 'stack':
+// Informieren Sie sich, wie ein 'Stack' funkt.
+// https://de.wikipedia.org/wiki/Stapelspeicher
 // Definieren Sie eine Struktur 'stack', die ein Feld fester Länge (z.B. 3) von 'int' enthält, sowie eine Variable 'next' für die nächste freie Position im Feld.
 struct stack
 {
@@ -12,8 +14,8 @@ struct stack
 
 std::ostream &operator<<(std::ostream &os, const stack &st)
 {
-    std::string delim = "";
-    for (size_t i = 0; i < stack_dim; i++)
+    std::string delim; // (A)
+    for (size_t i = 0; i < stack_dim; i++) // (B)
     {
         os << delim << st.buffer[i];
         delim = ", ";
@@ -60,21 +62,21 @@ int main()
         std::cerr << e.what << std::endl;
     }
 
-    int n;
+    int num;
 
     try
     {
-        n = pop(st);
-        std::cout << "st: " << st << ", n: " << n << std::endl;
+        num = pop(st);
+        std::cout << "st: " << st << ", num: " << num << std::endl;
 
-        n = pop(st);
-        std::cout << "st: " << st << ", n: " << n << std::endl;
+        num = pop(st);
+        std::cout << "st: " << st << ", num: " << num << std::endl;
 
-        n = pop(st);
-        std::cout << "st: " << st << ", n: " << n << std::endl;
+        num = pop(st);
+        std::cout << "st: " << st << ", num: " << num << std::endl;
 
-        n = pop(st);
-        std::cout << "st: " << st << ", n: " << n << std::endl;
+        num = pop(st);
+        std::cout << "st: " << st << ", num: " << num << std::endl;
     }
     catch (const stack_exception &e)
     {
@@ -108,3 +110,19 @@ void reset(stack &st)
         st.buffer[i] = 0;
     }
 }
+
+
+/* Kommentierung
+ *
+ * (A)  Per default wird ein std::string mit "" initialisiert. 
+ *      std::string delim = "";
+ *      wuerde natuerlich funktionieren, wird aber nicht empfohlen.
+ *
+ *      Siehe dazu auch:
+ * https://clang.llvm.org/extra/clang-tidy/checks/fuchsia-overloaded-operator.html
+ *
+ * (B)  Generell sind ranged-based for-loops zu bevorzugen. Das spielt hier aber erstmal eine geringere Rolle.
+ *
+ *      Siehe dazu auch:
+ * https://clang.llvm.org/extra/clang-tidy/checks/modernize-loop-convert.html
+ */
