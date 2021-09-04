@@ -18,12 +18,12 @@
 - [x] Meadow River
  
 ### 0x04
-- [ ] Oakberg
-- [ ] Brickgate
-- [ ] Hicks Bluff
-- [ ] Ashfield
-- [ ] Sparrow Town
-- [ ] Bakeropolis
+- [x] Oakberg
+- [x] Brickgate
+- [x] Hicks Bluff
+- [x] Ashfield
+- [x] Sparrow Town
+- [x] Bakeropolis
  
 ### 0x05
 - [ ] Copper View
@@ -68,7 +68,7 @@
  
 Command to check files for code conventions:
 ```bash
-clear && clang-tidy -checks=*,cppcoreguidelines-*,google-*,llvm-*,-modernize-use-trailing-return-type,-llvmlibc-callee-namespace,-llvmlibc-implementation-in-namespace,-llvmlibc-restrict-system-libc-headers,-fuchsia-overloaded-operator,-*magic-numbers -header-filter=".*" <filename>
+clear && clang-tidy -checks=*,cppcoreguidelines-*,google-*,llvm-*,-modernize-use-trailing-return-type,-llvmlibc-callee-namespace,-llvmlibc-implementation-in-namespace,-llvmlibc-restrict-system-libc-headers,-fuchsia-overloaded-operator,-*magic-numbers,-altera-unroll-loops,-fuchsia-default-arguments-calls -header-filter=".*" <filename>
 ``` 
 
 Kommentarformat:
