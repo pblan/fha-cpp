@@ -26,9 +26,9 @@
 - [x] Bakeropolis
  
 ### 0x05
-- [ ] Copper View
-- [ ] Kengate
-- [ ] McAllen Spring
+- [x] Copper View
+- [x] Kengate
+- [x] McAllen Spring
  
 ### 0x06
 - [ ] Reeds Field
@@ -85,3 +85,6 @@ Kommentarformat:
 # Using SSH Keys
 If you encounter problems using SSH keys inside the development container, see the following guide:
 https://code.visualstudio.com/docs/remote/containers#_using-ssh-keys
+
+# IMPORTANT
+- Manipulation in `0x05/mcallenspring.cpp` funktioniert nicht. Woran kann das liegen?
