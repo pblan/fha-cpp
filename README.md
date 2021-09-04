@@ -12,10 +12,10 @@
 - [x] Harshire
 
 ### 0x03
-- [ ] Ravencastle
-- [ ] Stone Ridge
-- [ ] Lucky Rock
-- [ ] Meadow River
+- [x] Ravencastle
+- [x] Stone Ridge
+- [x] Lucky Rock
+- [x] Meadow River
  
 ### 0x04
 - [ ] Oakberg
@@ -68,7 +68,7 @@
  
 Command to check files for code conventions:
 ```bash
-clear && clang-tidy -checks=*,cppcoreguidelines-*,google-*,llvm-*,-modernize-use-trailing-return-type,-llvmlibc-callee-namespace,-llvmlibc-implementation-in-namespace,-llvmlibc-restrict-system-libc-headers,-fuchsia-overloaded-operator,-*magic-numbers -header-filter=".*" uebungen/0x02/elkford.cpp <filename>
+clear && clang-tidy -checks=*,cppcoreguidelines-*,google-*,llvm-*,-modernize-use-trailing-return-type,-llvmlibc-callee-namespace,-llvmlibc-implementation-in-namespace,-llvmlibc-restrict-system-libc-headers,-fuchsia-overloaded-operator,-*magic-numbers -header-filter=".*" <filename>
 ``` 
 
 Kommentarformat:
@@ -81,3 +81,7 @@ Kommentarformat:
  * <link>
  */
 ``` 
+
+# Using SSH Keys
+If you encounter problems using SSH keys inside the development container, see the following guide:
+https://code.visualstudio.com/docs/remote/containers#_using-ssh-keys
