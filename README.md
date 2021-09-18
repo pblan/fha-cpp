@@ -48,10 +48,10 @@
 - [x] Peters Mines
  
 ### 0x09
-- [ ] Eastbourne
-- [ ] Openshaw
-- [ ] Wintervale
-- [ ] Banrockburn
+- [x] Eastbourne
+- [x] Openshaw
+- [x] Wintervale
+- [x] Banrockburn
 - [ ] Clarcton
  
 ### 0x0a
@@ -68,7 +68,7 @@
  
 Command to check files for code conventions:
 ```bash
-clear && clang-tidy -checks=*,cppcoreguidelines-*,google-*,llvm-*,-modernize-use-trailing-return-type,-llvmlibc-callee-namespace,-llvmlibc-implementation-in-namespace,-llvmlibc-restrict-system-libc-headers,-fuchsia-overloaded-operator,-*magic-numbers,-altera-unroll-loops,-fuchsia-default-arguments-calls,-google-explicit-constructor,-hicpp-explicit-conversions,-cppcoreguidelines-explicit-virtual-functions,-hicpp-use-override,-modernize-use-override,-cppcoreguidelines-special-member-functions,-hicpp-special-member-functions,-misc-non-private-member-variables-in-classes -header-filter=".*" <filename>
+clear && clang-tidy -checks=*,cppcoreguidelines-*,google-*,llvm-*,-modernize-use-trailing-return-type,-llvmlibc-callee-namespace,-llvmlibc-implementation-in-namespace,-llvmlibc-restrict-system-libc-headers,-fuchsia-overloaded-operator,-*magic-numbers,-altera-unroll-loops,-fuchsia-default-arguments-calls,-google-explicit-constructor,-hicpp-explicit-conversions,-cppcoreguidelines-explicit-virtual-functions,-hicpp-use-override,-modernize-use-override,-cppcoreguidelines-special-member-functions,-hicpp-special-member-functions,-misc-non-private-member-variables-in-classes,-altera-struct-pack-align -header-filter=".*" <filename>
 ``` 
 
 Kommentarformat:
@@ -90,3 +90,5 @@ https://code.visualstudio.com/docs/remote/containers#_using-ssh-keys
 - Manipulation in `0x05/mcallenspring.cpp` funktioniert nicht. Compileroptimierungen?
 - `using` statt `typedef`?
 - Nutzen von `override`? (ab `0x08/moorerock.cpp`)
+- Nutzen von `std::move` oder `std::string_view`?
+- Musterlösung zu `0x09/clarcton`?
