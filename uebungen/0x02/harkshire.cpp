@@ -107,7 +107,7 @@ void reset(stack &st) {
  * https://clang.llvm.org/extra/clang-tidy/checks/fuchsia-overloaded-operator.html
  *
  * (B)  Generell sind ranged-based for-loops zu bevorzugen. Das spielt hier aber
- * erstmal eine geringere Rolle.
+ *      erstmal eine geringere Rolle.
  *
  *      Siehe dazu auch:
  * https://clang.llvm.org/extra/clang-tidy/checks/modernize-loop-convert.html

@@ -63,6 +63,7 @@ RUN apt-get update \
     libc++abi-dev \
     clang-tidy \
     clangd \
+    valgrind \
     #    && ln -s /usr/bin/clang-tidy /usr/bin/clang-tidy \
     #    && ln -s /usr/bin/lldb /usr/bin/lldb \
     #    && ln -sf /usr/bin/lldb-server /usr/lib/llvm-10/bin/lldb-server.0.1 \
