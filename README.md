@@ -43,9 +43,9 @@
 - [x] Deerwoods
 
 ### 0x08
-- [ ] Moore Rock
-- [ ] Union Beach
-- [ ] Peters Mines
+- [x] Moore Rock
+- [x] Union Beach
+- [x] Peters Mines
  
 ### 0x09
 - [ ] Eastbourne
@@ -68,7 +68,7 @@
  
 Command to check files for code conventions:
 ```bash
-clear && clang-tidy -checks=*,cppcoreguidelines-*,google-*,llvm-*,-modernize-use-trailing-return-type,-llvmlibc-callee-namespace,-llvmlibc-implementation-in-namespace,-llvmlibc-restrict-system-libc-headers,-fuchsia-overloaded-operator,-*magic-numbers,-altera-unroll-loops,-fuchsia-default-arguments-calls -header-filter=".*" <filename>
+clear && clang-tidy -checks=*,cppcoreguidelines-*,google-*,llvm-*,-modernize-use-trailing-return-type,-llvmlibc-callee-namespace,-llvmlibc-implementation-in-namespace,-llvmlibc-restrict-system-libc-headers,-fuchsia-overloaded-operator,-*magic-numbers,-altera-unroll-loops,-fuchsia-default-arguments-calls,-google-explicit-constructor,-hicpp-explicit-conversions,-cppcoreguidelines-explicit-virtual-functions,-hicpp-use-override,-modernize-use-override,-cppcoreguidelines-special-member-functions,-hicpp-special-member-functions,-misc-non-private-member-variables-in-classes -header-filter=".*" <filename>
 ``` 
 
 Kommentarformat:
@@ -86,5 +86,7 @@ Kommentarformat:
 If you encounter problems using SSH keys inside the development container, see the following guide:
 https://code.visualstudio.com/docs/remote/containers#_using-ssh-keys
 
-# IMPORTANT
+# TBD
 - Manipulation in `0x05/mcallenspring.cpp` funktioniert nicht. Compileroptimierungen?
+- `using` statt `typedef`?
+- Nutzen von `override`? (ab `0x08/moorerock.cpp`)
