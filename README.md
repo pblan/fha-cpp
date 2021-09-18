@@ -31,11 +31,11 @@
 - [x] McAllen Spring
  
 ### 0x06
-- [ ] Reeds Field
-- [ ] South Birds Gale
-- [ ] Green Mound
-- [ ] Rose Pond
-- [ ] Kenford
+- [x] Reeds Field
+- [x] South Birds Gale
+- [x] Green Mound
+- [x] Rose Pond
+- [x] Kenford
  
 ### 0x07
 - [ ] Dover Town
@@ -87,4 +87,4 @@ If you encounter problems using SSH keys inside the development container, see t
 https://code.visualstudio.com/docs/remote/containers#_using-ssh-keys
 
 # IMPORTANT
-- Manipulation in `0x05/mcallenspring.cpp` funktioniert nicht. Woran kann das liegen?
+- Manipulation in `0x05/mcallenspring.cpp` funktioniert nicht. Compileroptimierungen?
