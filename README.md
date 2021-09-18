@@ -38,9 +38,9 @@
 - [x] Kenford
  
 ### 0x07
-- [ ] Dover Town
-- [ ] Heart Land
-- [ ] Deerwoods
+- [x] Dover Town
+- [x] Heart Land
+- [x] Deerwoods
 
 ### 0x08
 - [ ] Moore Rock
