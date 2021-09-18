@@ -61,10 +61,10 @@
 - [x] Pleim
  
 ### 0x0b
-- [ ] Westwheat
-- [ ] Coldwall
-- [ ] Deepbutter
-- [ ] Smoothrock
+- [x] Westwheat
+- [x] Coldwall
+- [x] Deepbutter
+- [x] Smoothrock
  
 Command to check files for code conventions:
 ```bash
