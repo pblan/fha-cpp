@@ -55,10 +55,10 @@
 - [ ] Clarcton
  
 ### 0x0a
-- [ ] Roarport
-- [ ] Kreley
-- [ ] Yrouwood
-- [ ] Pleim
+- [x] Roarport
+- [x] Kreley
+- [x] Yrouwood
+- [x] Pleim
  
 ### 0x0b
 - [ ] Westwheat
