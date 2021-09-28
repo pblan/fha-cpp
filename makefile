@@ -1,8 +1,8 @@
 # author: a.voss@fh-aachen.de
 
 # Which compiler to use
-CXX = g++
-# CXX = clang++
+#CXX = g++
+CXX = clang++
 
 # What flags should be passed to the compiler
 CXXFLAGS = -ansi -pedantic -Wall -Wextra -Wconversion -pthread -std=c++17
