@@ -6,6 +6,7 @@
 // und [...] Beachten Sie: '*it' ist der Wert des Elements und 'cbegin' und
 // 'cend' geben einen const_iterator zurück.
 typedef std::vector<int>::const_iterator it_type; // (A)
+// using it_type = std::vector<int>::const_iterator;
 
 // Erweitern Sie Übung 'Oakberg'.
 int main() {

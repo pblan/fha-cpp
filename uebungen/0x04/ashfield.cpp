@@ -12,6 +12,7 @@ struct buch {
 // einen 'string' (ISBN) auf ein 'buch' abbildet. [...]
 
 typedef std::unordered_map<std::string, buch> katalog_t;
+// using katalog_t = std::unordered_map<std::string, buch>;
 
 // Mapping von ISBN-Nummer zu Büchern.
 int main() {
